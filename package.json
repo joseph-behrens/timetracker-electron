@@ -1,0 +1,14 @@
+{
+  "name": "timetracker-electron",
+  "version": "1.0.0",
+  "description": "Time Tracking Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Joe Behrens",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.7"
+  }
+}
