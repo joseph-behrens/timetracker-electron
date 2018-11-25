@@ -5,14 +5,6 @@ import { setupApplicationTest } from 'ember-qunit';
 module('Acceptance | timetracker', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('select projects loads existing projects', async function (assert) {
-    
-  });
-
-  test('select client loads existing clients', async function (assert) {
-    
-  });
-
   test('home page should open report', async function (assert) {
     await visit('/');
     assert.equal(currentURL(), '/report', 'should auto redirect to report page');
@@ -47,14 +39,23 @@ module('Acceptance | timetracker', function(hooks) {
   });
 
   test('report should auto sort and filter by date', async function (assert) {
-    
+    assert.equal(true, false);
   });
 
   test('report should allow filter by client', async function (assert) {
-    
+    assert.equal(true, false);
   });
 
   test('report should allow filter by project', async function (assert) {
-    
+    assert.equal(true, false);
   });
+
+  test('select projects loads existing projects', async function (assert) {
+    assert.equal(true, false);
+  });
+
+  test('select client loads existing clients', async function (assert) {
+    assert.equal(true, false);
+  });
+
 });

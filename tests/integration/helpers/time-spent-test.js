@@ -7,11 +7,10 @@ module('Integration | Helper | time-spent', function(hooks) {
   setupRenderingTest(hooks);
 
   // Replace this with your real tests.
-  test('it renders', async function(assert) {
-    this.set('inputValue', '1234');
+  test('calculates correct time', async function(assert) {
+    
+    await render(hbs`{{time-spent 'Tue Dec 06 2018 13:30:00 GMT-0600 (Central Standard Time)' 'Tue Dec 06 2018 18:45:00 GMT-0600 (Central Standard Time)'}}`);
 
-    await render(hbs`{{time-spent inputValue}}`);
-
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), '05:15');
   });
 });
