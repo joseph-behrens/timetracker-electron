@@ -1,0 +1,22 @@
+<thead>
+    <tr>
+        <th>Client</th>
+        <th>Project</th>
+        <th>Description</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Time Spent</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each model as |item|}}
+        <tr class="report-row">
+            <td>{{item.Client}}</td>
+            <td>{{item.Project}}</td>
+            <td>{{item.Description}}</td>
+            <td>{{readable-date item.StartTime}}</td>
+            <td>{{readable-date item.EndTime}}</td>
+            <td>{{time-spent item.StartTime item.EndTime}}</td>
+        </tr>
+    {{/each}}
+</tbody>
