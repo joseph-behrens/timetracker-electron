@@ -1,8 +1,14 @@
 <div class="content">
   <div class="container-fluid">
     <h1>Time Tracker</h1>
-    {{#link-to "timer"}}Timer{{/link-to}} | 
-    {{#link-to "report"}}Report{{/link-to}}
-    {{outlet}}
+    {{#link-to "timer" class="menu-timer"}}
+      Timer
+    {{/link-to}} | 
+    {{#link-to "report" class="menu-report"}}
+      Report
+    {{/link-to}}
+    <div class="body">
+      {{outlet}}
+    </div>
   </div>
 </div>

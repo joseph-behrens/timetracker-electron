@@ -2,6 +2,6 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
     model() {
-        return $.getJSON("/data/time_entries.json");
+        return this.modelFor('application');
     }
 });
