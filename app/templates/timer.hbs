@@ -1,35 +1,28 @@
-<h2>Timer</h2>
-
-{{!-- <p><strong>Client:</strong> {{model.[1].Client}}</p>
-<p><strong>Project:</strong> {{model.[1].Project}}</p>
-<p><strong>Description:</strong> {{model.[1].Description}}</p>
-<p><strong>Start:</strong> {{model.[1].StartTime}}</p>
-<p><strong>End:</strong> {{model.[1].EndTime}}</p> --}}
-
-<form action="">
+<h2>Enter New Time</h2>
+<form {{action "createTimeEntry" on="submit"}}>
     <div>
         <label for="client"><strong>Client: </strong></label>
-        <input type="text" id="client" placeholder={{model.[0].Client}}>
+        {{input value=client placeholder=model.[0].Client}}
     </div>
 
     <div>
         <label for="project"><strong>Project: </strong></label>
-        <input type="text" id="project" placeholder={{model.[0].Project}}>
+        {{input value=project placeholder=model.[0].Project}}
     </div>
 
     <div>
         <label for="description"><strong>Description: </strong></label>
-        <input type="text" id="description" placeholder={{model.[0].Description}}>
+        {{input value=description placeholder=model.[0].Description}}
     </div>
 
     <div>
         <label for="start"><strong>Start: </strong></label>
-        <input type="datetime" id="start" placeholder={{model.[0].StartTime}}>
+        {{input type="datetime-local" value=start placeholder=model.[0].StartTime}}
     </div>
 
     <div>
         <label for="end"><strong>End: </strong></label>
-        <input type="datetime" id="end" placeholder={{model.[0].EndTime}}>
+        {{input type="datetime-local" value=end placeholder=model.[0].EndTime}}
     </div>
 
     <div>

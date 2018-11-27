@@ -1,0 +1,6 @@
+<select name="client-filter" onchange="location = this.value;">
+    <option selected="selected">Filter by Client</option>
+    {{#each model as |item|}}
+        <option value="#/report/client/{{item.Client}}">{{item.Client}}</option>
+    {{/each}}
+</select>
