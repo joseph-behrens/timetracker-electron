@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: skyblue;
+}

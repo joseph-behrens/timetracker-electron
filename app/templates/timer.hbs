@@ -1,31 +1,31 @@
 <h2>Enter New Time</h2>
 <form {{action "createTimeEntry" on="submit"}}>
-    <div>
+    <div class="form-group">
         <label for="client"><strong>Client: </strong></label>
-        {{input value=client placeholder=model.[0].Client}}
+        {{input value=client class="form-control" placeholder=model.[0].Client}}
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="project"><strong>Project: </strong></label>
-        {{input value=project placeholder=model.[0].Project}}
+        {{input value=project class="form-control" placeholder=model.[0].Project}}
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="description"><strong>Description: </strong></label>
-        {{input value=description placeholder=model.[0].Description}}
+        {{input value=description class="form-control" placeholder=model.[0].Description}}
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="start"><strong>Start: </strong></label>
-        {{input type="datetime-local" value=start placeholder=model.[0].StartTime}}
+        {{input type="datetime-local" class="form-control" value=start placeholder=model.[0].StartTime}}
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="end"><strong>End: </strong></label>
-        {{input type="datetime-local" value=end placeholder=model.[0].EndTime}}
+        {{input type="datetime-local" class="form-control" value=end placeholder=model.[0].EndTime}}
     </div>
 
-    <div>
-        <input type="submit" value="Submit">
+    <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="Submit">
     </div>
 </form>
